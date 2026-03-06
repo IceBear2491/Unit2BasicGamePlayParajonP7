@@ -4437,6 +4437,8 @@ GameObject:
   - component: {fileID: 687306486900904015}
   - component: {fileID: 3354179376914604295}
   - component: {fileID: -3914256526750346956}
+  - component: {fileID: 9199025185910230825}
+  - component: {fileID: 2308313045732719145}
   m_Layer: 0
   m_Name: Dog_BullDog_01
   m_TagString: Untagged
@@ -4543,6 +4545,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5faddb39825383542855d74dde08f7e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DestroyOutOfBounds
+--- !u!65 &9199025185910230825
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5870650430868540382}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.12529898, y: 0.18205138, z: 0.20332539}
+  m_Center: {x: 0.00057343335, y: 0.080747955, z: 0.02435073}
+--- !u!114 &2308313045732719145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5870650430868540382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ff9027ec2840e44bbe94c6301e20839, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DetectCollisions
 --- !u!1 &5891505142629577797
 GameObject:
   m_ObjectHideFlags: 0
