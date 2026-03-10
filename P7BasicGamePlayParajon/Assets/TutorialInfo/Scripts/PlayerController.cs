@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     public float xRange = 20;
     public float zRange = 5;
     public GameObject projectilePrefab;
+    public Transform projectileSpawnPoint;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -39,9 +40,9 @@ public class PlayerController : MonoBehaviour
             transform.position = new Vector3(transform.position.x, transform.position.y, -zRange);
         }
         if (Input.GetKeyDown(KeyCode.Space))
-        { 
+        {
             //Launch a projectile from the player
-            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+            Instantiate(projectilePrefab, projectileSpawnPoint.position, projectilePrefab.transform.rotation);
         }
     }
 }
