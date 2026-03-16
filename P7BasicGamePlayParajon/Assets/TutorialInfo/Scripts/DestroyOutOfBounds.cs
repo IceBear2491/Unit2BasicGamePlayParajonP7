@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class DestroyOutOfBounds : MonoBehaviour
 {
-    private float topBound = 80;
-    private float lowerBound = -30;
-    private float sideBound = 80;
+    private float topBound = 40;
+    private float lowerBound = -20;
+    private float sideBound = 40;
     private GameManager gameManager;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
